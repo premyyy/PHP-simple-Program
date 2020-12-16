@@ -29,8 +29,8 @@ if(isset($_POST['submit']))
         $quey = "INSERT INTO new VALUES ($number,'$name');";
         $db_insert = pg_query($db_conn, $quey);
       if(!$db_insert){
-          echo "fuck you!";
-      }else echo "ohh yaah";
+          echo "Data is inserted.";
+      }else echo "Data is not inserted.";
 
     
       pg_close($db_conn); 
